@@ -1,0 +1,17 @@
+h1 {
+    color: rgb(222, 22, 55);
+}
+
+.box {
+    background-color: rgb(87, 87, 98);
+    height: 200px;
+    width: 300px; /* Tambahkan satuan px */
+    margin: 300px;
+}
+
+.box-dua {
+    background-color: black;
+    height: 500px;
+    width: 500px; /* Tambahkan satuan px */
+    margin-left: 500px;
+}
