@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleSlideShow.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        var i = 0;
+        
+        $(document).ready(function () {
+            $('.slidertitle, #slider img').hide();
+            showNextImage();
+            setInterval(showNextImage, 3000);
+        });
+
+        function showNextImage() {
+            $('#sliderImage' + (i + 1)).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+            $('#title' + (i + 1)).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+            i++;
+
+            // Reset i when it reaches the total number of images
+            if (i === 3) {
+                i = -1; // Reset to -1 to ensure the next call to showNextImage increments to 0
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <img id="sliderImage1" src="img/images1.jpeg">
+        <div class="slidertitle" id="title1">Gambarl</div>
+        <img id="sliderImage2" src="img/images2.jpeg">
+        <div class="slidertitle" id="title2">Gambar2</div>
+        <img id="sliderImage3" src="img/images3.jpeg">
+        <div class="slidertitle" id="title3">Gambar3</div>
+    </div>
+</body>
+</html>
