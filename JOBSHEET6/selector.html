@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Elements Example</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("h2").hide(); // Hides the <h2> element
+                $(".subjudul").hide(); // Hides all elements with class "subjudul"
+                $("#paragraf").hide(); // Hides the <p> with id "paragraf"
+                $("#paragrafdua").hide(); // Changed ID to "paragrafdua" for uniqueness
+                $("div p.paragraf").hide(); // Hides the <p> elements with class "paragraf" inside <div>
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Ini Adalah Judul Bab</h2>
+    <h3 class="subjudul">Ini Adalah Sub Judul Bab</h3>
+    <p id="paragraf">Ini Adalah Paragraf Pertama</p>
+    <p id="paragrafdua" class="dua">Ini Adalah Paragraf Kedua</p> <!-- Changed ID to ensure it's unique -->
+    <div>
+        <p class="paragraf">Ini adalah Paragraf Ketiga</p> <!-- Moved content inside the <p> tag -->
+    </div>
+    <p>Ini paragraf yang akan tetap ditampilkan</p> <!-- This paragraph will remain visible -->
+    <button>Klik Saya!</button> <!-- Button to trigger the click event -->
+</body>
+</html>
