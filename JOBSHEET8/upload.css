@@ -1,0 +1,28 @@
+.file-label {
+  background: #3498db; /* Blue background */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.upload-button {
+  background: #2ecc71; /* Green background */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  opacity: 0.5; /* Opacity to make it appear faded */
+}
+
+/* Styles for the upload button when it is disabled */
+.upload-button:disabled {
+  background: #ccc; /* Change color when disabled */
+  cursor: not-allowed; /* Change cursor style when disabled */
+}
+
+.upload-status {
+  margin-top: 20px; /* Space above the status message */
+  font-weight: bold; /* Bold text */
+}
