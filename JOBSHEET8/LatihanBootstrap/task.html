@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pengenalan Bootstrap</title>
+    <!-- Menyisipkan Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Menyisipkan Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar-custom {
+            background-color: #563d7c;
+        }
+        .jumbotron-custom {
+            background-color: #e9ecef;
+            padding: 2rem 1rem;
+            border-radius: 10px;
+        }
+        .img-custom {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-custom navbar-light">
+        <a class="navbar-brand text-white" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="jumbotron jumbotron-custom">
+            <h1 class="display-4">Belajar Bootstrap</h1>
+            <p class="lead">Bootstrap adalah framework untuk membuat responsif website menggunakan HTML, CSS, and JS.</p>
+        </div>
+        <p class="text-center">Mata Kuliah Desain dan Pemrograman Web</p>
+        <p class="text-center">Samid - 2341760173</p>
+
+        <h2>Pengaturan Gambar pada Bootstrap</h2>
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col img-custom">
+                <img src="poltek.png" class="rounded img-fluid" alt="gambar round">
+            </div>
+            <div class="col img-custom">
+                <img src="poltek.png" class="rounded-circle img-fluid" alt="gambar circle">
+            </div>
+            <div class="col img-custom">
+                <img src="poltek.png" class="img-thumbnail img-fluid" alt="gambar thumbnail">
+            </div>
+            <div class="col img-custom">
+                <img src="poltek.png" class="img-fluid" alt="gambar thumbnail">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
