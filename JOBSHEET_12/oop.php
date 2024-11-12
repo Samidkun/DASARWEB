@@ -296,3 +296,4 @@ $animal = new Animal("Dog", 3, "Brown");
 echo "Name: " . $animal->getName() . "<br>";
 echo "Age: " . $animal->getAge() . "<br>";
 echo "Color: " . $animal->getColor() . "<br>";
+
