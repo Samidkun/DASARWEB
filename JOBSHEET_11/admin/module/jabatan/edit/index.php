@@ -20,6 +20,7 @@
                 
                 <div class="card-body">
                     <form action="fungsi/edit.php?jabatan-edit" method="POST">
+
                         <input type="hidden" value="<?php echo $row['id']; ?>" name="id">
                         
                         <div class="mb-3">
@@ -37,10 +38,12 @@
                         </button>
                         
                         <a href="index.php?page=jabatan" class="btn btn-secondary">
+
                             <i class="fa fa-times" aria-hidden="true"></i> Batal
                         </a>
                     </form>
                 </div>
+
             </div>
         </main>
     </div>

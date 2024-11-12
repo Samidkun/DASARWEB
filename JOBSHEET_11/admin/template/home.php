@@ -10,6 +10,7 @@
         $query_jabatan = "SELECT count(id) as jml FROM jabatan";
         $result_jabatan = mysqli_query($koneksi, $query_jabatan);
         $row_jabatan = mysqli_fetch_assoc($result_jabatan);
+    
         ?>
         
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">

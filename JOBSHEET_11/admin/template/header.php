@@ -12,6 +12,7 @@
     <meta name="generator" content="Hugo 0.118.2">
     <title>Aplikasi Kantor Siapa</title>
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
 
 

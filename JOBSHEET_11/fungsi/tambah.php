@@ -20,6 +20,7 @@ if (!empty($_GET['jabatan'])) {
     } else {
         pesan('danger', "Gagal Menambahkan Jabatan Karena: " . mysqli_error($koneksi));
     }
+    
 }
 
 

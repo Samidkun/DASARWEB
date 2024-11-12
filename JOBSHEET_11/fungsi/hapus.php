@@ -33,6 +33,7 @@ if (!empty($_SESSION['username'])) {
             $query = "DELETE FROM user WHERE id = '$id'";
             if (mysqli_query($koneksi, $query)) {
                 pesan('success', "Anggota dan Data Login Telah Terhapus.");
+                
             } else {
                 pesan('danger', "Data Login Tidak Terhapus Karena: " . mysqli_error($koneksi));
             }

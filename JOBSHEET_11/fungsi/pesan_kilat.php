@@ -18,6 +18,7 @@ function get_flashdata($key = "") {
     } else {
         echo "<script>alert('Flash Message \'{$key}\' is not defined.');</script>";
         return null;
+        
     }
 }
 

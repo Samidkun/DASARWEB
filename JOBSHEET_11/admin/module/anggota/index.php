@@ -16,6 +16,7 @@
             </div>
             <?php if (isset($_SESSION['_flashdata'])) {
                 echo "<br>";
+                
                 foreach ($_SESSION['_flashdata'] as $key => $val) {
                     echo get_flashdata($key);
                 }

@@ -19,5 +19,6 @@ if (!empty($_SESSION['level'])) {
 } else {
     header("Location: login.php");
     exit();
+    
 }
 ?>

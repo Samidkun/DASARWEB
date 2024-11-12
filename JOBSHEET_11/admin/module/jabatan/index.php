@@ -18,6 +18,7 @@
                 echo "<br>";
                 foreach ($_SESSION['_flashdata'] as $key => $val) {
                     echo get_flashdata($key);
+            
                 }
             }
             ?>

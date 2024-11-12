@@ -9,6 +9,7 @@ require '../config/koneksi.php';
 require '../fungsi/pesan_kilat.php';
 require '../fungsi/anti_injection.php';
 
+
 if (!empty($_GET['jabatan'])) {
     // Process the 'jabatan' if needed
 }

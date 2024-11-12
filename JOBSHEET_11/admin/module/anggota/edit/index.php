@@ -15,6 +15,7 @@
             <form action="fungsi/edit.php?anggota=edit" method="POST">
                 <div class="row">
                     <div class="col-sm-6">
+                        
                         <div class="card">
                             <div class="card-header">
                                 Form Edit Anggota
